@@ -4,3 +4,5 @@ services:
     build: .
     image: "threshold-pre-client.public.dappnode.eth:0.1.0"
     restart: unless-stopped
+    ports:
+    - "9151:9151"
