@@ -6,3 +6,10 @@ services:
     restart: unless-stopped
     ports:
     - "9151:9151"
+    volumes:
+    - "nucypher:/root/.local/share/nucypher"
+    - "ethereum:/root/.ethereum"
+
+volumes:
+  nucypher: {}
+  ethereum: {}
