@@ -2,4 +2,7 @@ FROM nucypher/nucypher:v6.0.0@sha256:850449ef09ba1902b5fd9bb698d233d8d708cda53bf
 
 WORKDIR /usr/src/app
 
-ENTRYPOINT echo "happy buidl $USERNAME!"
+COPY src/entrypoint.sh ./entrypoint.sh
+COPY src/init.py ./init.py
+
+ENTRYPOINT ["/bin/bash", "/usr/src/app/entrypoint.sh"]
