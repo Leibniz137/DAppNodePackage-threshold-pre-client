@@ -2,6 +2,17 @@ version: "3.4"
 services:
   threshold-pre-client.public.dappnode.eth:
     build: .
+    environment:
+      - "ETH_PROVIDER_URL=http://fullnode.dappnode:8545/"
+      - IP_ADDRESS
+      - MAX_GAS_PRICE=750
+      - NETWORK=mainnet
+      - NUCYPHER_KEY_MATERIAL
+      - NUCYPHER_KEYSTORE_PASSWORD
+      - OPERATOR_KEYSTORE_PASSWORD
+      - OPERATOR_KEYSTORE_JSON
+      - PAYMENT_NETWORK=polygon
+      - PAYMENT_PROVIDER_URL
     image: "threshold-pre-client.public.dappnode.eth:0.1.0"
     restart: unless-stopped
     ports:
