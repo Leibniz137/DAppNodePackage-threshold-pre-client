@@ -11,6 +11,7 @@ REQUIRED_ENV_VARS = [
     'ETH_PROVIDER_URL',
     'IP_ADDRESS',
     'MAX_GAS_PRICE',
+    'NETWORK',
     'NUCYPHER_KEY_MATERIAL',
     'NUCYPHER_KEYSTORE_PASSWORD',
     'OPERATOR_KEYSTORE_PASSWORD',
@@ -58,7 +59,7 @@ def main():
     eth_provider = os.environ['ETH_PROVIDER_URL']
     max_gas_price = os.environ['MAX_GAS_PRICE']
     # TODO should network and payment_network still be configurable?
-    network = 'mainnet'
+    network = os.environ['NETWORK']
     rest_host = os.environ['IP_ADDRESS']
     payment_network = 'polygon'
     payment_provider = os.environ['PAYMENT_PROVIDER_URL']
