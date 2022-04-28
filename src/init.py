@@ -61,7 +61,7 @@ def main():
     # TODO should network and payment_network still be configurable?
     network = os.environ['NETWORK']
     rest_host = os.environ['IP_ADDRESS']
-    payment_network = 'polygon'
+    payment_network = os.environ['PAYMENT_NETWORK']
     payment_provider = os.environ['PAYMENT_PROVIDER_URL']
 
     if not URSULA_CONFIG_PATH.exists():
