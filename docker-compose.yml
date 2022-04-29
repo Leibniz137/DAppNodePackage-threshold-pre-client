@@ -13,7 +13,7 @@ services:
       - OPERATOR_KEYSTORE_JSON
       - PAYMENT_NETWORK=polygon
       - PAYMENT_PROVIDER_URL
-    image: "threshold-pre-client.public.dappnode.eth:0.1.0"
+    image: "threshold-pre-client.public.dappnode.eth:0.1.1"
     restart: unless-stopped
     ports:
       - "9151:9151"

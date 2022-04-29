@@ -5,6 +5,8 @@ from pathlib import Path
 import subprocess
 import time
 
+from web3 import Web3
+
 logging.basicConfig(level=logging.INFO)
 
 REQUIRED_ENV_VARS = [
@@ -53,7 +55,9 @@ def main():
         with OPERATOR_KEYSTORE_JSON_PATH.open('w') as fp:
             json.dump(operator_keystore_json, fp)
 
-    operator_addr = '0x' + operator_keystore_json['address']
+    # must be checksum address, otherwise:
+    # "RuntimeError: Invalid checksum address detected in configuration file at '/root/.local/share/nucypher/ursula.json'"
+    operator_addr = Web3.toChecksumAddress('0x' + operator_keystore_json['address'])
 
     signer = f'keystore://{str(OPERATOR_KEYSTORE_PATH)}'
     eth_provider = os.environ['ETH_PROVIDER_URL']
