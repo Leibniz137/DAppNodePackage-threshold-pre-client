@@ -27,12 +27,12 @@ fields:
     maxLength: 32
     description: >-
       Password to the nucypher keystore
-  - id: OPERATOR_KEYSTORE_PASSWORD
+  - id: NUCYPHER_OPERATOR_ETH_PASSWORD
     target:
       type: environment
-      name: OPERATOR_KEYSTORE_PASSWORD
+      name: NUCYPHER_OPERATOR_ETH_PASSWORD
       service: threshold-pre-client.public.dappnode.eth
-    title: OPERATOR_KEYSTORE_PASSWORD
+    title: NUCYPHER_OPERATOR_ETH_PASSWORD
     maxLength: 32
     description: >-
       Password to the operator's ethereum keystore
