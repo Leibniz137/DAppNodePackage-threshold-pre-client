@@ -1,4 +1,5 @@
 # Getting started
+NOTE: you need a public static ip address to run this package.
 
 ### Step 1: stake in UI
 see: https://dashboard.threshold.network/overview/network
