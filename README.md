@@ -34,7 +34,7 @@ bash scripts/generate-password.sh
 
 ### Step 5: 
 
-bond the operator address you generated with the address that controls you T (or legacy nu/keep) stake: https://stake.nucypher.network/manage/bond
+bond the operator address you generated with the address that controls your T (or legacy nu/keep) stake: https://stake.nucypher.network/manage/bond
 
 ### Step 6: Install Dappnode package
 
