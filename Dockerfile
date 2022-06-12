@@ -1,4 +1,4 @@
-FROM nucypher/nucypher:v6.0.0@sha256:850449ef09ba1902b5fd9bb698d233d8d708cda53bf016c6e1e58fc6cc3a9527
+FROM nucypher/nucypher:v6.1.0@sha256:4a1d3ba4a1a1e5803af1bb7bc016770870a9158aa140ba0f59ac651b2ce4d42b
 
 WORKDIR /usr/src/app
 

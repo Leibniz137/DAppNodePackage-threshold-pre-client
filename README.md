@@ -53,9 +53,9 @@ Using the Backup tab on the package's page
 Note the security assumptions you are making when you install software you didn't build from source!
 
 ```
-Release hash : /ipfs/QmbDSazBXxfv7R4fkqGBd5JLRqQk2vtBDzpAMy3YGwKdFF
+Release hash : /ipfs/QmXdx38Wg6vMjPkCA1HzDpNNm2By1Gp9fXZ1H5CRmBqsoA
 ```
-goto http://my.dappnode/#/installer/%2Fipfs%2FQmbDSazBXxfv7R4fkqGBd5JLRqQk2vtBDzpAMy3YGwKdFF
+goto http://my.dappnode/#/installer/%2Fipfs%2FQmXdx38Wg6vMjPkCA1HzDpNNm2By1Gp9fXZ1H5CRmBqsoA
 on your dappnode vpn or wifi network
 
 # Building from source
