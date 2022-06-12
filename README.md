@@ -39,8 +39,7 @@ bond the operator address you generated with the address that controls your T (o
 
 ### Step 6: Install Dappnode package
 
-Release hash : /ipfs/QmZWVtYFfSkPSGrjvrDw5YVCzmDQtduC1fu5FGHZLn5zhh
-http://my.dappnode/#/installer/%2Fipfs%2FQmZWVtYFfSkPSGrjvrDw5YVCzmDQtduC1fu5FGHZLn5zhh
+Either build the package from source (safer) or install using the url of the prebuilt package
 
 and fill in the environment variables
 
