@@ -17,7 +17,6 @@ services:
     restart: unless-stopped
     ports:
       - "9151:9151"
-      - "3919:3919"
     volumes:
       - "nucypher:/root/.local/share/nucypher"
       - "ethereum:/root/.ethereum"
